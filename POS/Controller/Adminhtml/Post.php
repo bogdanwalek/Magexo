@@ -3,35 +3,11 @@ namespace Magexo\POS\Controller\Adminhtml;
 
 abstract class Post extends \Magento\Backend\App\Action
 {
-    /**
-     * Post Factory
-     * 
-     * @var \Magexo\POS\Model\PostFactory
-     */
+
     protected $_postFactory;
-
-    /**
-     * Core registry
-     * 
-     * @var \Magento\Framework\Registry
-     */
     protected $_coreRegistry;
-
-    /**
-     * Result redirect factory
-     * 
-     * @var \Magento\Backend\Model\View\Result\RedirectFactory
-     */
     protected $_resultRedirectFactory;
 
-    /**
-     * constructor
-     * 
-     * @param \Magexo\POS\Model\PostFactory $postFactory
-     * @param \Magento\Framework\Registry $coreRegistry
-     * @param \Magento\Backend\Model\View\Result\RedirectFactory $resultRedirectFactory
-     * @param \Magento\Backend\App\Action\Context $context
-     */
     public function __construct(
         \Magexo\POS\Model\PostFactory $postFactory,
         \Magento\Framework\Registry $coreRegistry,

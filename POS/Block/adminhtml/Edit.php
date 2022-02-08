@@ -10,13 +10,6 @@ class Edit extends \Magento\Backend\Block\Widget\Form\Container
      */
     protected $_coreRegistry;
 
-    /**
-     * constructor
-     * 
-     * @param \Magento\Framework\Registry $coreRegistry
-     * @param \Magento\Backend\Block\Widget\Context $context
-     * @param array $data
-     */
     public function __construct(
         \Magento\Framework\Registry $coreRegistry,
         \Magento\Backend\Block\Widget\Context $context,

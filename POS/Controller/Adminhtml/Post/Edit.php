@@ -3,38 +3,11 @@ namespace Magexo\POS\Controller\Adminhtml\Post;
 
 class Edit extends \Magexo\POS\Controller\Adminhtml\Post
 {
-    /**
-     * Backend session
-     * 
-     * @var \Magento\Backend\Model\Session
-     */
+
     protected $_backendSession;
 
-    /**
-     * Page factory
-     * 
-     * @var \Magento\Framework\View\Result\PageFactory
-     */
     protected $_resultPageFactory;
 
-    /**
-     * Result JSON factory
-     * 
-     * @var \Magento\Framework\Controller\Result\JsonFactory
-     */
-    protected $_resultJsonFactory;
-
-    /**
-     * constructor
-     * 
-     * @param \Magento\Backend\Model\Session $backendSession
-     * @param \Magento\Framework\View\Result\PageFactory $resultPageFactory
-     * @param \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory
-     * @param \Magexo\POS\Model\PostFactory $postFactory
-     * @param \Magento\Framework\Registry $registry
-     * @param \Magento\Backend\Model\View\Result\RedirectFactory $resultRedirectFactory
-     * @param \Magento\Backend\App\Action\Context $context
-     */
     public function __construct(
         \Magento\Backend\Model\Session $backendSession,
         \Magento\Framework\View\Result\PageFactory $resultPageFactory,
