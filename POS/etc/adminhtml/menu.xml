@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magexo_POS::pos" title="Point of Sale" module="Magexo_POS" sortOrder="51" resource="Magexo_POS::pos"/>
+        <add id="Magexo_POS::post" title="Manage Points" module="Magexo_POS" sortOrder="10" action="magexo_pos/post" resource="Magexo_POS::post" parent="Magexo_POS::pos"/>
+    </menu>
+</config>
